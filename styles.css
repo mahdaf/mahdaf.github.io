@@ -34,8 +34,10 @@ h3 {
     background-image: url('assets/bg.png'); 
     background-size: cover;
     background-position: center;
-    padding: 10px;
 }
+.hero-section .row {
+	max-width: 100%;
+  }
 .text-hero {
     margin-top: 15%;
     margin-bottom: 15%;
