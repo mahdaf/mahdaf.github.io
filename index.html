@@ -49,11 +49,11 @@
       <div class="row" id="home">
           <div class="col-md-6">
             <div class="align-items-center text-hero">
-            <img src="assets/hero-img.png" class="mx-auto d-block" style="max-width: 750%;height: auto;"/>
+            <img src="assets/hero-img.png" class="mx-auto d-block fade-right" style="max-width: 750%;height: auto;"/>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="align-items-center text-hero">
+            <div class="align-items-center text-hero fade-right">
             <p>A long-life learner</p>
             <h1>Hello everyone👋</h1>
             <h1>My Name is Ahdaf</h1>
@@ -68,7 +68,7 @@
   
       
     <div class="container" style="margin-top:30px" id="profil">
-        <div class="row about">
+        <div class="row about fade-bottom">
             <div class="col-sm-4">
               <img class="img-thumbnail" src="assets/photo.jpg"/>
             </div>
@@ -77,7 +77,7 @@
               <h3>Hi There! I'm Ahdaf 😁</h3>
               <p>I am a college student at ITS Surabaya with an interest in the world of technology and business. I have managed blogs and worked as a content writer, I voiced creativity in every writing and did SEO optimization. In addition, I have also had projects as UI/UX designer, social media officer, and social media designer. This has enriched my knowledge and skills. The online training certification that I achieved is a foundation to continue to grow. In various organizations, I am passionate and dedicated.</p>
               <a href="https://www.linkedin.com/in/muhammad-ahdaf/" target="_blank" class="btn btn-primary round" role="button"><i class="fab fa-linkedin"></i> View Linkedin</a> 
-              <a href="" target="_blank" class="btn btn-primary round" role="button"><i class="fab fa-dochub"></i> View CV</a> 
+              <a href="https://www.linkedin.com/in/muhammad-ahdaf/" target="_blank" class="btn btn-primary round" role="button"><i class="fab fa-dochub"></i> View CV</a> 
             </div>
           </div>
     </div>
@@ -331,7 +331,22 @@
       <div class="jumbotron footer" style="margin-bottom:0">
         <p>  &copy; 2023 Ahdaf Web Profile - Made With ❤️</p>
       </div>
-      
+
+        <script>
+        // JavaScript
+        function cekScroll() {
+          const elemen = document.querySelector('.fade-bottom');
+          const posisi = elemen.getBoundingClientRect().top;
+          const ukuranLayar = window.innerHeight;
+    
+          if (posisi < ukuranLayar) {
+            elemen.classList.add('muncul');
+          }
+        }
+        window.addEventListener('scroll', cekScroll);
+        window.addEventListener('load', cekScroll);
+      </script>
+          
       <script>
         // Disable form submissions if there are invalid fields
         (function() {
