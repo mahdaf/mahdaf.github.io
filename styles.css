@@ -121,9 +121,32 @@ h3 {
 	  box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
 	  z-index: 0; }
 
-	
+	  @keyframes kanan {
+		0% {
+		  opacity: 0;
+		  transform: translateX(-100%);
+		}
+		100% {
+		  opacity: 1;
+		  transform: translateX(0);
+		}
+	  }
+	.fade-right{	
+		animation: kanan 3s ease;
+	}
+
+	.fade-bottom {
+		opacity: 0;
+		transform: translateY(100%);
+		transition: opacity 1s, transform 1s;
+	  }
   
-		.footer {
+	.fade-bottom.muncul {
+		opacity: 1;
+		transform: translateY(0);
+	  }
+  
+.footer {
             padding: 30px 0px 30px 0px;
             background-color: #9cd3f6;
             text-align: center;
