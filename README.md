@@ -1,2 +1,2 @@
-# mahdaf.github.io
-Muhammad Ahdaf Amali NRP 5026221129
+# Web Project Mid Term
+Ahdaf web profile
